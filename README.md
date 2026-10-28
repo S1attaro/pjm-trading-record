@@ -8,7 +8,7 @@ timestamped proof of what it called, and when.
 
 ## Live results (per MW, after a $0.75/MWh trading cost)
 
-No trades scored yet. Paper trading starts Dec 1, 2026 (New York decisions start Nov 29).
+0 decisions sealed so far. Decisions and results are revealed together when the season ends (winter 2026-27: March 1, 2027).
 
 Updated 2026-10-28. Every scored trade: [`results.csv`](results.csv).
 
@@ -16,8 +16,8 @@ Updated 2026-10-28. Every scored trade: [`results.csv`](results.csv).
 
 1. **Every decision is sealed before the market.** Its SHA-256 fingerprint goes into
    [`commitments.csv`](commitments.csv) the day it's made, in a dated commit.
-2. **After the trade day, the decision is revealed** in [`decisions/`](decisions/). Hash it and
-   compare: `sha256sum decisions/<file>.json` (or `Get-FileHash` on Windows). Each file has a
+2. **When the season ends, every decision is revealed** in [`decisions/`](decisions/)
+   (winter 2026-27: March 1, 2027). Hash each one and compare: `sha256sum decisions/<file>.json` (or `Get-FileHash` on Windows). Each file has a
    random nonce, so the fingerprint can't be guessed ahead of time.
 3. **Scores** use the markets' final published prices and are listed in `results.csv`.
 4. **The rules are locked** for the whole 2026-27 winter. No changes mid-season.
