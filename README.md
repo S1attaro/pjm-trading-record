@@ -10,7 +10,7 @@ timestamped proof of what it called, and when.
 
 0 decisions sealed so far. Decisions and results are revealed together when the season ends (winter 2026-27: March 1, 2027).
 
-Updated 2026-10-29. Every scored trade: [`results.csv`](results.csv).
+Updated 2026-10-30. Every scored trade: [`results.csv`](results.csv).
 
 ## How to check it
 
