@@ -10,7 +10,7 @@ timestamped proof that every decision was made before the market, and the season
 
 0 decisions sealed so far. Season totals are posted when the season ends (winter 2026-27: March 1, 2027).
 
-Updated 2026-10-31.
+Updated 2026-11-01.
 
 ## How it can be checked
 
