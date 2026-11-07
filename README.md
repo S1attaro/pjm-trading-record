@@ -3,8 +3,23 @@
 By Connor Slattery
 
 A daily paper-trading test (no real money) of a signal for day-ahead vs real-time electricity
-prices in PJM and New York. The signal and its research are private. This repo is the public,
-timestamped proof that every decision was made before the market, and the season results.
+prices, run separately in five US power markets. The signal and its research are private. This
+repo is the public, timestamped proof that every decision was made before the market, and the
+season results.
+
+## Markets
+
+Each market has its own decisions, its own log and its own results. Nothing from one market
+is used in another. Each folder has a short explanation and that market's fingerprints.
+
+| Market | Rules | Decisions sealed |
+|---|---|---|
+| [PJM](markets/pjm/README.md) | PJM v1, PJM v2 | 0 |
+| [New York](markets/new-york/README.md) | NY v3 | 0 |
+| [SPP](markets/spp/README.md) | SPP v4 | 0 |
+| [MISO](markets/miso/README.md) | MISO v4 | 0 |
+| [California](markets/california/README.md) | California v4 | 0 |
+
 
 ## Season results (per MW, after a $0.75/MWh trading cost)
 
@@ -15,7 +30,8 @@ Updated 2026-11-06.
 ## How it can be checked
 
 1. **Every decision is sealed before the market.** Its SHA-256 fingerprint goes into
-   [`commitments.csv`](commitments.csv) the day it's made, in a dated commit. Every in-season
+   [`commitments.csv`](commitments.csv) (all markets) and into that market's folder the day it's
+   made, in a dated commit. Every in-season
    day gets one, whether it traded or not, and each sealed file has a random nonce, so the
    fingerprint gives nothing away.
 2. **Every fingerprint gets an outside timestamp** from [OpenTimestamps](https://opentimestamps.org)
