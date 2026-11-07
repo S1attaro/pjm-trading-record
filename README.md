@@ -25,7 +25,7 @@ is used in another. Each folder has a short explanation and that market's finger
 
 0 decisions sealed so far. Season totals are posted when the season ends (winter 2026-27: March 1, 2027).
 
-Updated 2026-11-06.
+Updated 2026-11-07.
 
 ## How it can be checked
 
